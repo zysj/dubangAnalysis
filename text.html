@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>杜邦分析结构图测试</title>
+        <style type="text/css">
+        #dubang{
+            /* margin-left:1100px; */
+        }
+        div{
+            position: relative;
+            height: 700px;
+            width:1100px;
+            margin:0px;
+            overflow: auto;
+        }
+        html,body{
+            width:100%;
+            height: 100%;
+            margin:0px;
+            padding:0px;
+        }
+        </style>
+    </head>
+    <body>
+        <!-- <div>
+            <canvas id="dubang"></canvas>
+        </div> -->
+        <div style="width:250px">
+        <header>header</header>
+        <section class="wrapper">
+            <aside class="col left">left</aside>
+            <section class="col main">
+                    <div>
+                        main
+                    </div>
+                </section>
+            <aside class="col right">right</aside>
+        </section>
+        <footer>footer</footer>
+        </div>
+<style>
+/* 以下为简码，仅保留关键部分 */
+header,footer {height: 50px;}
+.wrapper {padding: 0 100px 0 100px; overflow:hidden;}
+.col {position: relative; float: left;}
+.main {width: 100%;height: 200px;}
+.left {width: 100px; height: 200px; margin-left: -100%;left: -100px;}
+.right {width: 100px; height: 200px; margin-left: -100px; right: -100px;}
+</style>
+    </body>
+    <script type="text/javascript" src="../lib/jquery.js"></script>
+    <script type="text/javascript" src="dubang-analysis.js"></script>
+</html>
